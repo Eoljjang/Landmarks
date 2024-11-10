@@ -19,7 +19,7 @@ struct ContentView: View {
         VStack {
             // 1) Add the mapview in. AUTOMATICALLY refers to the "MapView.swift" file, no need to specify file extension or import it.
             MapView()
-                .frame(height: 300) // If you only specify height, the width automatically expands to fill the space.
+                .frame(height: 300) // If you only specify height, the width automatically expands to fill the space. Git test.
             
             // 2) Add the CircleImage view.
             CircleImage()
