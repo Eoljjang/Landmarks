@@ -15,7 +15,7 @@ import SwiftUI
 // This file is where we accumualte all of our views:
 struct ContentView: View {
     var body: some View {
-        // Top level view stack.
+        // Top level view stack. Hi
         VStack {
             // 1) Add the mapview in. AUTOMATICALLY refers to the "MapView.swift" file, no need to specify file extension or import it.
             MapView()
