@@ -9,8 +9,11 @@ import SwiftUI
 
 // For images, you have to import them into "Assets.xcassets" under "preview content" folder.
 struct CircleImage: View {
+    var image: Image // Property: Store an image.
+    
+    
     var body: some View {
-        Image("turtlerock") // Referenced by name of file only.
+        image // Render the stored property.
             .clipShape(Circle())
             .overlay {
                 Circle().stroke(.white, lineWidth: 4)
@@ -20,5 +23,6 @@ struct CircleImage: View {
 }
 
 #Preview {
-    CircleImage()
+    // Since you defined a property, you must pass it into the preview.
+    CircleImage(image: Image("turtlerock"))
 }
