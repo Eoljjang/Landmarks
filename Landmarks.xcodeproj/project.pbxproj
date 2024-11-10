@@ -45,6 +45,11 @@
 			path = LandmarksUITests;
 			sourceTree = "<group>";
 		};
+		E01C9FFC2CE1410800146B10 /* Assets */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Assets;
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +80,7 @@
 		E01C9FB02CE138A800146B10 = {
 			isa = PBXGroup;
 			children = (
+				E01C9FFC2CE1410800146B10 /* Assets */,
 				E01C9FBB2CE138A800146B10 /* Landmarks */,
 				E01C9FCC2CE138A900146B10 /* LandmarksTests */,
 				E01C9FD62CE138A900146B10 /* LandmarksUITests */,
@@ -155,6 +161,7 @@
 			);
 			fileSystemSynchronizedGroups = (
 				E01C9FD62CE138A900146B10 /* LandmarksUITests */,
+				E01C9FFC2CE1410800146B10 /* Assets */,
 			);
 			name = LandmarksUITests;
 			packageProductDependencies = (
