@@ -21,4 +21,10 @@ struct ContentView: View {
 
 #Preview {
     ContentView()
+        .environment(ModelData())
 }
+
+// ^ Passes ModelData() object down to any environment.
+// - A preview will fail if any subview requires a model object in the environment, but
+//   the view you're previewing doesn't have the "environment" modifier.
+// - (it's kind of like props)

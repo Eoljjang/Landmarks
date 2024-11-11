@@ -19,6 +19,11 @@ struct LandmarkRow: View {
             Text(landmark.name)
             
             Spacer()
+            
+            if landmark.isFavorite{ // If fav - puts a star there.
+                Image(systemName: "star.fill")
+                    .foregroundStyle(.yellow) // system images are vector based.
+            }
         }
     }
 }
@@ -35,6 +40,7 @@ struct LandmarkRow: View {
 //}
 
 #Preview{
+    let landmarks = ModelData().landmarks
     // Renders the views together if you grouped them like this.
     Group{
         LandmarkRow(landmark: landmarks[0])

@@ -18,6 +18,7 @@ struct Landmark: Hashable, Codable, Identifiable{ // 'codable' makes it easier t
     var park: String
     var state: String
     var description: String
+    var isFavorite: Bool
     private var imageName: String // Private cuz each image needs to have its own unique name.
     private var coordinates: Coordinates
     

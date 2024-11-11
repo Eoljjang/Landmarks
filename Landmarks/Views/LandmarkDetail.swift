@@ -8,9 +8,18 @@
 import SwiftUI
 
 struct LandmarkDetail: View {
+    @Environment(ModelData.self) var modelData
     var landmark: Landmark // We now have the specific landmark you clicked stored here.
+    
+    var landmarkIndex: Int {
+        // Finds 1st index in landmarks list where its id matches 'landmark.id'
+        // Returns the index of that element, or nil if there's no match.
+        // '!' enforces a match. If there's no match, the app will crash. IE: Makes it non-optional.
+        modelData.landmarks.firstIndex(where: {$0.id == landmark.id})!
+    }
+    
     var body: some View {
-        // Top level view stack. Hi
+        @Bindable var modelData = modelData
         ScrollView {
             // 1) Add the mapview in. AUTOMATICALLY refers to the "MapView.swift" file, no need to specify file extension or import it.
             MapView(coordinate: landmark.locationCoordinate)
@@ -23,10 +32,13 @@ struct LandmarkDetail: View {
     
             
             // 3) Description
-            VStack(alignment: .leading) { // left-aligned.
+            VStack(alignment: .leading) { // left-aligned
                 // 3.1) Main title
-                Text(landmark.name)
-                    .font(.title)
+                HStack {
+                    Text(landmark.name)
+                        .font(.title)
+                    FavoriteButton(isSet: $modelData.landmarks[landmarkIndex].isFavorite) // Bind 'isSet' property to $modelData.
+                }
                 
                 // 3.2) Sub title
                 HStack {
@@ -54,5 +66,7 @@ struct LandmarkDetail: View {
 }
 
 #Preview {
-    LandmarkDetail(landmark: landmarks[0])
+    let modelData = ModelData()
+    return LandmarkDetail(landmark: ModelData().landmarks[0]) // calls the specific ModelData() view.
+        .environment(modelData)
 }

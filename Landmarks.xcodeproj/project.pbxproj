@@ -6,11 +6,6 @@
 	objectVersion = 77;
 	objects = {
 
-/* Begin PBXBuildFile section */
-		E01CA0022CE14B0600146B10 /* landmarkData.json in Resources */ = {isa = PBXBuildFile; fileRef = E01CA0012CE14B0600146B10 /* landmarkData.json */; };
-		E01CA0032CE14B0600146B10 /* landmarkData.json in Resources */ = {isa = PBXBuildFile; fileRef = E01CA0012CE14B0600146B10 /* landmarkData.json */; };
-/* End PBXBuildFile section */
-
 /* Begin PBXContainerItemProxy section */
 		E01C9FCA2CE138A900146B10 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -32,7 +27,6 @@
 		E01C9FB92CE138A800146B10 /* Landmarks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Landmarks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E01C9FC92CE138A900146B10 /* LandmarksTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LandmarksTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E01C9FD32CE138A900146B10 /* LandmarksUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LandmarksUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		E01CA0012CE14B0600146B10 /* landmarkData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = landmarkData.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -91,7 +85,6 @@
 				E01C9FCC2CE138A900146B10 /* LandmarksTests */,
 				E01C9FD62CE138A900146B10 /* LandmarksUITests */,
 				E01C9FBA2CE138A800146B10 /* Products */,
-				E01CA0012CE14B0600146B10 /* landmarkData.json */,
 			);
 			sourceTree = "<group>";
 		};
@@ -226,7 +219,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E01CA0032CE14B0600146B10 /* landmarkData.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -241,7 +233,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E01CA0022CE14B0600146B10 /* landmarkData.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
